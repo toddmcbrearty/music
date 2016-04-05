@@ -15,7 +15,7 @@ class AudioController extends Controller
 
         $band = session('band');
         $audio = $band->audio;
-        dd($audio);
+      
         $tracks = $audio->each(function($item) {
             return $item;
         });
