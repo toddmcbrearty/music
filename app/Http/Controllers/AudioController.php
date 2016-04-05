@@ -12,13 +12,20 @@ use Intervention\Image\Facades\Image;
 class AudioController extends Controller
 {
     public function index() {
-
         $band = session('band');
         $audio = $band->audio;
-      
-        $tracks = $audio->each(function($item) {
-            return $item;
-        });
+
+        foreach($audio->all() as $item) {
+            $tracks[] = [
+                'meta' => $item->toArray(),
+                'files' => $item->files->toArray(),
+                'images' => [
+                    $item->filename.'-small.png',
+                    $item->filename.'-medium.png',
+                    $item->filename.'-large.png',
+                ],
+            ];
+        }
 
         return response()->json($tracks);
 

@@ -13,6 +13,10 @@ class Audio extends Model
     ];
 
     public function getFilenameAttribute() {
-        return (string) $this->attribute['filename'];
+        return (string) $this->attributes['filename'];
+    }
+
+    public function files() {
+        return $this->hasMany('App\AudioFiles', 'filename', 'filename');
     }
 }

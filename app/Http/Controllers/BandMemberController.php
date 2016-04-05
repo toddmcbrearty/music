@@ -13,21 +13,21 @@ class BandMemberController extends Controller
 
         //member exists in the system so we'll link them to the band
         //and ask them if they approve of being in the band
-        if(is_int($member['member_id']) and empty($member['name'])) {
+        if(is_int((int) $member['member_id']) and empty($member['name'])) {
             //add to band_members table with status 0
-            $success = session('band')->members()->create([
-                'user_id' => $member['member_id'],
+            $memberData = [
+                'user_id' => (int) $member['member_id'],
                 'status' => 0,
-            ]);
-            //send request
+            ];
+            //send request email. dont forget to do this
+            //dumbass
         } else { //just a static name
-            dd(session('band'));
-            $success = session('band')->members()->create([
+            $memberData = [
                 'name' => $member['name'],
                 'status' => 1
-            ]);
+            ];
         }
 
-        response()->json(['saved' => $success]);
+        response()->json(['saved' => session('band')->members()->create($memberData)]);
     }
 }

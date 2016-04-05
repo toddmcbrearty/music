@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>B420EB2D-D1BD-45B1-B59A-E49A5E6A5A1B</UUID>
-        <nextObjectID>137</nextObjectID>
+        <nextObjectID>138</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -75,7 +75,7 @@
         <relationship name="variablesvalues" type="0/0" destination="LMENVIRONMENTVARIABLEVALUE" idrefs="z104"></relationship>
     </object>
     <object type="LMENVIRONMENTVARIABLEVALUE" id="z104">
-        <attribute name="value" type="string">eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIiwianRpIjoiTDZVYjBjeVBNT2Jic0ZFWXRGVk42R1UxcElEdEIwbTIifQ.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMCIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdDo4MDAwIiwianRpIjoiTDZVYjBjeVBNT2Jic0ZFWXRGVk42R1UxcElEdEIwbTIiLCJpYXQiOjE0NTk4MTgyMDUsImV4cCI6MTQ1OTgyMTgwNSwidWlkIjoiZXlKcGRpSTZJalo2TVVkT1JuWm1WM0UwYjJobWJTdGlZbU40VEZFOVBTSXNJblpoYkhWbElqb2lNMnQzUlVoUGVFOUxlbmxYWldGUVFXcFpXbFp3UVQwOUlpd2liV0ZqSWpvaU1XTXlZelV6Tm1RNE56YzJZV1poTkdVME9EY3haV1V6WkRWbVlqRXdORGcyT0dFMk9UQm1aREV5T1RFNU1qWTROMlUzTnpFNU1ETm1aRFE1TmpVNE9TSjkiLCJiaWQiOiJleUpwZGlJNklrOXBLMU5hTmtweFZtNUZNWEpyUmpObGRHb3dTa0U5UFNJc0luWmhiSFZsSWpvaU5scDVNVlJjTHpGelRXUTBUWFY1U25aUVRWaENZbWM5UFNJc0ltMWhZeUk2SWpCa00yRTVOVE16T0RBMlpHWTJOMlJqTldRMFpUZGhNV00wTURZM01tUmxaR0l6WmpNeFpERTBZV0psTWpaaVpEWTJPVEJsTW1JNFpqazNOemRqT0RBaWZRPT0ifQ.</attribute>
+        <attribute name="value" type="string">eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIiwianRpIjoiTDZVYjBjeVBNT2Jic0ZFWXRGVk42R1UxcElEdEIwbTIifQ.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMCIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdDo4MDAwIiwianRpIjoiTDZVYjBjeVBNT2Jic0ZFWXRGVk42R1UxcElEdEIwbTIiLCJpYXQiOjE0NTk4MzA3NjQsImV4cCI6MTQ1OTgzNDM2NCwidWlkIjoiZXlKcGRpSTZJa2hwTTJOaFluRm1RWEpITjB4RVZ6RTVSamRhWTJjOVBTSXNJblpoYkhWbElqb2lTM1Y2V2tkdVdHWklOMVJFZFhoTmVEQlpLemcwVVQwOUlpd2liV0ZqSWpvaU5HTmhORE5sTnprM1kyRmpNbUZrWVRjek9EWXlZV1U1TmpZeU5qWTBZVFl3TWpWaFlqVXlaalkxTlRCaFlqRXlZV0ptWmpZNE1HSmxPREl5WldNMlpDSjkiLCJiaWQiOiJleUpwZGlJNklsd3ZObWRaV2xGM2FuZDFlVE5zYkRod1RESTRlRVpuUFQwaUxDSjJZV3gxWlNJNklqaDZNWGg1Vm0xdU5HNDRNalJxV0hrMmJYbHFaR2M5UFNJc0ltMWhZeUk2SW1SbFlqUTFOalJrTWpjM01tVTBOelkyTnprMllXSm1NalJqT1RkbFpqZzBZakJsWm1WbU1HSTVZVFl4WVRJNVpHTTJNRFF5WWpWa01EaGhZVFUxTTJJaWZRPT0ifQ.</attribute>
         <relationship name="environment" type="1/1" destination="LMENVIRONMENT" idrefs="z103"></relationship>
         <relationship name="variable" type="1/1" destination="LMENVIRONMENTVARIABLE" idrefs="z102"></relationship>
     </object>
@@ -204,9 +204,9 @@
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z118"></relationship>
     </object>
     <object type="LMKEYVALUE" id="z117">
-        <attribute name="value" type="string"></attribute>
+        <attribute name="value" type="string">[{"data":{"environmentVariable":"2E17D83F-D445-4EE1-B923-3C1B2EDA2ABD"},"identifier":"com.luckymarmot.EnvironmentVariableDynamicValue"}]</attribute>
         <attribute name="order" type="int64">2</attribute>
-        <attribute name="name" type="string"></attribute>
+        <attribute name="name" type="string">Authorization</attribute>
         <attribute name="enabled" type="bool">1</attribute>
         <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
@@ -215,19 +215,19 @@
     </object>
     <object type="LMREQUEST" id="z118">
         <attribute name="uuid" type="string">838B8594-722D-4358-8F5B-394178507D7D</attribute>
-        <attribute name="url" type="string">localhost:8000/audio/c2e44162-f3cf-411a-95b9-60fb4b266f4e</attribute>
+        <attribute name="url" type="string">localhost:8000/audio/f269efca-bdca-4047-9933-ee6509a07a82</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">[{"data":{"json":"{\\"title\\":\\"new title\\",\\"lyrics\\":\\"Distance is different\\\\\\\\nwhen you talk time\\\\\\\\ncan't make you older \\\\\\\\nor me younger\\\\\\\\n\\\\\\\\nI can't have you\\\\\\\\nI'll be fine\\\\\\\\nA lonely life I'll live\\\\\\\\n\\\\\\\\nWhy would the world give you to me\\\\\\\\n(at arms reach)\\\\\\\\nWhen it knows I can't have you\\\\\\\\n(but I try every time)\\\\\\\\nWhy would the world break my heart\\\\\\\\n(every time)\\\\\\\\nWhen it knows I can't have you\\\\\\\\n\\\\\\\\nIt makes us stronger they say (they say)\\\\\\\\nI'm in no way stronger today\\\\\\\\n\\\\\\\\nI yell at myself\\\\\\\\nEvery time I reach out\\\\\\\\nOne word response if any at all\\\\\\\\n\\\\\\\\nThere's nothing to do \\\\\\\\n(turn it off) Can't turn it off\\\\\\\\n(bend time) Can't bend time\\\\\\\\n(smile) Can't smile\\\\\\\\n\\\\\\\\nWhy would the world give you to me\\\\\\\\n(at arms reach)\\\\\\\\nWhen it knows I can't have you\\\\\\\\n(but I try every time)\\\\\\\\nWhy would the world break my heart\\\\\\\\n(every time)\\\\\\\\nWhen it knows I can't have you\\\\\\\\n\\\\\\\\nIt makes us stronger they say (they say)\\\\\\\\nI'm in no way stronger today\\",\\"written_by\\":\\"todd\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"json":"{\\"title\\":\\"Tampons on Muddy Roads\\",\\"lyrics\\":\\"It's are scary scarry site\\",\\"written_by\\":\\"DaNips\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
         <attribute name="order" type="int64">5</attribute>
         <attribute name="name" type="string">update song info</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
         <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
-        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z115 z117 z116"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z115 z116 z117 z138"></relationship>
     </object>
     <object type="LMKEYVALUE" id="z119">
         <attribute name="value" type="string">application/json</attribute>
@@ -340,7 +340,7 @@
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">PUT</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">[{"data":{"json":"{\\"name\\":\\"john\\"\\/*,\\"member_id\\":\\"2\\"*\\/}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"json":"{\\/*\\"name\\":\\"john\\",*\\/\\"member_id\\":\\"2\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
         <attribute name="order" type="int64">6</attribute>
         <attribute name="name" type="string">add band member </attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
@@ -426,7 +426,7 @@
         <attribute name="redirectauthorization" type="bool">0</attribute>
         <attribute name="method" type="string">POST</attribute>
         <attribute name="followredirects" type="bool">0</attribute>
-        <attribute name="body" type="string">[{"data":{"keyValues":[[["file"],[{"data":{"bookmarkData":"Ym9va8gDAAAAAAQQMAAAAH4qRYsW9lw7nXDRUxSrjaFRHBkZnneakbLmsTHsnElkxAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHRvZGQEAAAAAQEAAENvZGUNAAAAAQEAAHRvZGRtY2ItbXVzaWMAAAADAAAAAQEAAGFwaQAHAAAAAQEAAHN0b3JhZ2UABQAAAAEBAABtZWRpYQAAAAUAAAABAQAAdGVzdHMAAAAFAAAAAQEAAGF1ZGlvAAAABQAAAAEBAABjYWNoZQAAAAgAAAABAQAAMjU1My5tcDMsAAAAAQYAABAAAAAgAAAALAAAADgAAABQAAAAXAAAAGwAAAB8AAAAjAAAAJwAAACsAAAACAAAAAQDAADZZQIAAAAAAAgAAAAEAwAAkP0IAAAAAAAIAAAABAMAADChHwEAAAAACAAAAAQDAACVhsIDAAAAAAgAAAAEAwAAT88HBAAAAAAIAAAABAMAALjPBwQAAAAACAAAAAQDAADEgzYEAAAAAAgAAAAEAwAA3K82BAAAAAAIAAAABAMAAKKzNgQAAAAACAAAAAQDAABcTjcEAAAAAAgAAAAEAwAA0Vs3BAAAAAAsAAAAAQYAAPAAAAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABgAQAAcAEAAIABAACQAQAACAAAAAAEAABBvLIncgAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAJAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAMjnMAAAAIAAAAAAQAAEG4symYAAAAJAAAAAEBAABBMDY1MDIzOS01OTYyLTMyMkQtOTg0Ni1BMzQzNjRDQjYzOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7\\/\\/\\/8BAAAAAAAAABAAAAAEEAAAvAAAAAAAAAAFEAAAoAEAAAAAAAAQEAAA5AEAAAAAAABAEAAA1AEAAAAAAAACIAAAsAIAAAAAAAAFIAAAIAIAAAAAAAAQIAAAMAIAAAAAAAARIAAAZAIAAAAAAAASIAAARAIAAAAAAAATIAAAVAIAAAAAAAAgIAAAkAIAAAAAAAAwIAAAvAIAAAAAAAABwAAABAIAAAAAAAARwAAAIAAAAAAAAAASwAAAFAIAAAAAAAAQ0AAABAAAAAAAAAA="},"identifier":"com.luckymarmot.FileContentDynamicValue"}],true],[["title"],["Can't Have You"],true],[["image"],[{"data":{"bookmarkData":"Ym9va\\/ACAAAAAAQQMAAAAOedGQoMY3VJ0GD3t0upCkhwq7FevmTO1CWAIMNtnBe87AEAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHRvZGQSAAAAAQEAAERyb3Bib3ggKFBlcnNvbmFsKQAACgAAAAEBAABTb3VuZENsb3VkAAANAAAAAQEAAHRvZGQtbG9nby5wbmcAAAAUAAAAAQYAABAAAAAgAAAALAAAAEgAAABcAAAACAAAAAQDAADZZQIAAAAAAAgAAAAEAwAAkP0IAAAAAAAIAAAABAMAALOxNwAAAAAACAAAAAQDAACg0wsEAAAAAAgAAAAEAwAA19QLBAAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvIzaBQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAMjnMAAAAIAAAAAAQAAEG4symYAAAAJAAAAAEBAABBMDY1MDIzOS01OTYyLTMyMkQtOTg0Ni1BMzQzNjRDQjYzOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7\\/\\/\\/8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA\\/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA="},"identifier":"com.luckymarmot.FileContentDynamicValue"}],true]]},"identifier":"com.luckymarmot.BodyMultipartFormDataDynamicValue"}]</attribute>
+        <attribute name="body" type="string">[{"data":{"keyValues":[[["file"],[{"data":{"bookmarkData":"Ym9va8gDAAAAAAQQMAAAAH4qRYsW9lw7nXDRUxSrjaFRHBkZnneakbLmsTHsnElkxAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHRvZGQEAAAAAQEAAENvZGUNAAAAAQEAAHRvZGRtY2ItbXVzaWMAAAADAAAAAQEAAGFwaQAHAAAAAQEAAHN0b3JhZ2UABQAAAAEBAABtZWRpYQAAAAUAAAABAQAAdGVzdHMAAAAFAAAAAQEAAGF1ZGlvAAAABQAAAAEBAABjYWNoZQAAAAgAAAABAQAAMjU1My5tcDMsAAAAAQYAABAAAAAgAAAALAAAADgAAABQAAAAXAAAAGwAAAB8AAAAjAAAAJwAAACsAAAACAAAAAQDAADZZQIAAAAAAAgAAAAEAwAAkP0IAAAAAAAIAAAABAMAADChHwEAAAAACAAAAAQDAACVhsIDAAAAAAgAAAAEAwAAT88HBAAAAAAIAAAABAMAALjPBwQAAAAACAAAAAQDAADEgzYEAAAAAAgAAAAEAwAA3K82BAAAAAAIAAAABAMAAKKzNgQAAAAACAAAAAQDAABcTjcEAAAAAAgAAAAEAwAA0Vs3BAAAAAAsAAAAAQYAAPAAAAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABgAQAAcAEAAIABAACQAQAACAAAAAAEAABBvLIncgAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAJAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAMjnMAAAAIAAAAAAQAAEG4symYAAAAJAAAAAEBAABBMDY1MDIzOS01OTYyLTMyMkQtOTg0Ni1BMzQzNjRDQjYzOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7\\/\\/\\/8BAAAAAAAAABAAAAAEEAAAvAAAAAAAAAAFEAAAoAEAAAAAAAAQEAAA5AEAAAAAAABAEAAA1AEAAAAAAAACIAAAsAIAAAAAAAAFIAAAIAIAAAAAAAAQIAAAMAIAAAAAAAARIAAAZAIAAAAAAAASIAAARAIAAAAAAAATIAAAVAIAAAAAAAAgIAAAkAIAAAAAAAAwIAAAvAIAAAAAAAABwAAABAIAAAAAAAARwAAAIAAAAAAAAAASwAAAFAIAAAAAAAAQ0AAABAAAAAAAAAA="},"identifier":"com.luckymarmot.FileContentDynamicValue"}],true],[["title"],["What's that smell?"],true],[["image"],[{"data":{"bookmarkData":"Ym9va\\/ACAAAAAAQQMAAAAOedGQoMY3VJ0GD3t0upCkhwq7FevmTO1CWAIMNtnBe87AEAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAEAAAAAQEAAHRvZGQSAAAAAQEAAERyb3Bib3ggKFBlcnNvbmFsKQAACgAAAAEBAABTb3VuZENsb3VkAAANAAAAAQEAAHRvZGQtbG9nby5wbmcAAAAUAAAAAQYAABAAAAAgAAAALAAAAEgAAABcAAAACAAAAAQDAADZZQIAAAAAAAgAAAAEAwAAkP0IAAAAAAAIAAAABAMAALOxNwAAAAAACAAAAAQDAACg0wsEAAAAAAgAAAAEAwAA19QLBAAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBvIzaBQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAAAMjnMAAAAIAAAAAAQAAEG4symYAAAAJAAAAAEBAABBMDY1MDIzOS01OTYyLTMyMkQtOTg0Ni1BMzQzNjRDQjYzOTgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7\\/\\/\\/8BAAAAAAAAABAAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA\\/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAAAAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA="},"identifier":"com.luckymarmot.FileContentDynamicValue"}],true]]},"identifier":"com.luckymarmot.BodyMultipartFormDataDynamicValue"}]</attribute>
         <attribute name="order" type="int64">4</attribute>
         <attribute name="name" type="string">upload song Duplicate</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM"></relationship>
@@ -442,5 +442,15 @@
         <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z136"></relationship>
+    </object>
+    <object type="LMKEYVALUE" id="z138">
+        <attribute name="value" type="string"></attribute>
+        <attribute name="order" type="int64">3</attribute>
+        <attribute name="name" type="string"></attribute>
+        <attribute name="enabled" type="bool">1</attribute>
+        <relationship name="groupforbodyparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforheaders" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="groupforurlparameters" type="0/1" destination="LMREQUESTGROUP"></relationship>
+        <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z118"></relationship>
     </object>
 </database>

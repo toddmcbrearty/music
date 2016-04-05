@@ -15,4 +15,12 @@ class AudioFiles extends Model
         'fileextension',
         'band_id',
     ];
+    protected $hidden = [
+        'id',
+        'band_id',
+    ];
+
+    public function getFilenameAttribute() {
+        return (string) $this->attributes['filename'];
+    }
 }
