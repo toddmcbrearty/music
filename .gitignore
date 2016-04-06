@@ -7,3 +7,4 @@ Homestead.json
 .idea
 storage/media/*
 !storage/media/tests
+bower_components/*
