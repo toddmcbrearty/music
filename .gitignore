@@ -6,4 +6,4 @@ Homestead.json
 .env
 .idea
 storage/media/*
-!storage/media/testsstorage/media/*
+bower_components/*
